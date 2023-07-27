@@ -12,7 +12,7 @@ extension UINavigationController {
         super.viewWillLayoutSubviews()
         navigationBar.topItem?.backButtonDisplayMode = .minimal
     }
-
+    
 }
 
 struct ListView: View {
@@ -21,11 +21,33 @@ struct ListView: View {
     @State private var darkModeImg = "sun.max"
     @State private var searchText = ""
     
+    // 0: Safe, 1: Neutral, 2: Dangerous
+    @State private var filterTypes = [true, true, true]
+    
     init() {
         UINavigationBar.appearance().largeTitleTextAttributes = [.font : UIFont(name: "Courier", size: 40)!]
         UINavigationBar.appearance().titleTextAttributes = [.font : UIFont(name: "Courier", size: 30)!]
-
-
+        
+        
+    }
+    
+    private func filterEntries(name : String) -> [UrbanEntry]{
+        
+        let filtered = urbanEntries.filter {
+            
+            let classFilter =
+            (filterTypes[0] && $0.classification == "Safe") ||
+            (filterTypes[1] && $0.classification == "Neutral") ||
+            (filterTypes[2] && $0.classification == "Dangerous")
+            
+            if(!name.isEmpty){
+                return $0.name.contains(name) && classFilter
+            }
+            return classFilter
+        }
+        
+        
+        return filtered
     }
     
     var body: some View {
@@ -36,7 +58,14 @@ struct ListView: View {
                 Color("background").edgesIgnoringSafeArea(.all)
                 ScrollView{
                     VStack {
-                        ForEach(urbanEntries){ entry in
+                        HStack{
+                            FIlterButton(labelFor: $filterTypes[0], btnLabel: "Safe")
+                            FIlterButton(labelFor: $filterTypes[1], btnLabel: "Neutral")
+                            FIlterButton(labelFor: $filterTypes[2], btnLabel: "Danger")
+                        }
+                        .frame(height: 30)
+                        .padding()
+                        ForEach(filterEntries(name: searchText)){ entry in
                             NavigationLink(
                                 destination: {
                                     EntryView(entry: entry)
@@ -59,7 +88,7 @@ struct ListView: View {
                         darkMode.toggle()
                         if(darkMode){
                             scheme = .dark
-                            darkModeImg = "moon"
+                            darkModeImg = "moon.fill"
                         }else {
                             scheme = .light
                             darkModeImg = "sun.max"
@@ -76,6 +105,7 @@ struct ListView: View {
         .tint(Color("textColor"))
     }
 }
+
 
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {

@@ -19,6 +19,7 @@
 		1FF5037A2A6EA64D004341F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF503792A6EA64D004341F4 /* ContentView.swift */; };
 		1FFD2D122A70F19700264035 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFD2D112A70F19700264035 /* MapView.swift */; };
 		1FFD2D142A71155400264035 /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFD2D132A71155400264035 /* EntryView.swift */; };
+		1FFD2D162A72C75C00264035 /* FIlterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFD2D152A72C75C00264035 /* FIlterButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		1FF503792A6EA64D004341F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1FFD2D112A70F19700264035 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		1FFD2D132A71155400264035 /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
+		1FFD2D152A72C75C00264035 /* FIlterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIlterButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				1F1D7E5A2A6FC15F0038F2B5 /* EntryRow.swift */,
 				1FFD2D112A70F19700264035 /* MapView.swift */,
 				1FFD2D132A71155400264035 /* EntryView.swift */,
+				1FFD2D152A72C75C00264035 /* FIlterButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				1F1D7E592A6FBE7D0038F2B5 /* UrbanData.swift in Sources */,
 				1FFD2D122A70F19700264035 /* MapView.swift in Sources */,
 				1FF5036B2A6E8C75004341F4 /* MainScreen.swift in Sources */,
+				1FFD2D162A72C75C00264035 /* FIlterButton.swift in Sources */,
 				1F1D7E5B2A6FC15F0038F2B5 /* EntryRow.swift in Sources */,
 				1F1D7E562A6FB3650038F2B5 /* UrbanEntry.swift in Sources */,
 				1FF503692A6E8C75004341F4 /* Urban_LegendsApp.swift in Sources */,

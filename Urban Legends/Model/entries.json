@@ -28,7 +28,7 @@
     {
         "name": "Lockness Monster",
         "type": "Pre-historic",
-        "classification": "Friendly",
+        "classification": "Safe",
         "location" : "Lockness Lake, Scotland",
         "description": "Lorem Ipsum",
         "imageName": "nessie",
@@ -98,7 +98,7 @@
     {
         "name": "Devil's Footprint",
         "type": "Phenomenon",
-        "classification": "Friendly",
+        "classification": "Safe",
         "location" : "England",
         "description": "Lorem Ipsum",
         "imageName": "devil_prints",
