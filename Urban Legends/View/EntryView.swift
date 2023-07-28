@@ -16,11 +16,32 @@ struct EntryView: View {
             
             VStack {
                 MapView(coordinates: entry.sighting)
-                    .frame(height: 250)
-                ScrollView {
-                    VStack {
-                       
+                    .frame(height: 290)
+                    .overlay{
+                        
                     }
+                entry.image
+                    .resizable()
+                    .frame(width: 190, height: 190)
+                    .aspectRatio(contentMode: .fit)
+                    .clipShape(
+                        RoundedRectangle(cornerSize: CGSize(width: 50, height: 50)))
+                    .overlay{
+                        RoundedRectangle(cornerSize: CGSize(width: 50, height: 50))
+                            .stroke(style: StrokeStyle(lineWidth: 15))
+                            .foregroundColor(Color("background"))
+                    }
+                    .offset(y: -50)
+                    .padding(.bottom, -50)
+                
+                ScrollView{
+                    VStack(alignment: .leading){
+                        Text("TYPE")
+                        Text("CLASSIFICATION")
+                        Text("")
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding()
                 }
             }
         }
@@ -31,6 +52,6 @@ struct EntryView: View {
 
 struct EntryView_Previews: PreviewProvider {
     static var previews: some View {
-        EntryView(entry: urbanEntries[0])
+        EntryView(entry: urbanEntries[1])
     }
 }

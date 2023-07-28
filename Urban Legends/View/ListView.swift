@@ -34,7 +34,6 @@ struct ListView: View {
     private func filterEntries(name : String) -> [UrbanEntry]{
         
         let filtered = urbanEntries.filter {
-            
             let classFilter =
             (filterTypes[0] && $0.classification == "Safe") ||
             (filterTypes[1] && $0.classification == "Neutral") ||
@@ -53,7 +52,6 @@ struct ListView: View {
     var body: some View {
         
         NavigationView{
-            
             ZStack {
                 Color("background").edgesIgnoringSafeArea(.all)
                 ScrollView{
@@ -102,7 +100,7 @@ struct ListView: View {
             
         }
         .preferredColorScheme(scheme)
-        .tint(Color("textColor"))
+        .tint(Color("f_back"))
     }
 }
 
