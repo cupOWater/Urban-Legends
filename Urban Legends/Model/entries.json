@@ -55,7 +55,7 @@
     },
     {
         "name": "La Llorona",
-        "type": "Spectre",
+        "type": "Ghost",
         "classification": "Dangerous",
         "location" : "Mexico",
         "description": "Lorem Ipsum",
@@ -83,7 +83,7 @@
     },
     {
         "name": "Teke Teke",
-        "type": "Spectre",
+        "type": "Ghost",
         "classification": "Dangerous",
         "location" : "Japan",
         "description": "Lorem Ipsum",

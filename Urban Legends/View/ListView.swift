@@ -41,7 +41,7 @@ struct ListView: View {
             (filterTypes[2] && $0.classification == "Dangerous")
             
             if(!name.isEmpty){
-                return $0.name.contains(name) && classFilter
+                return ($0.name.contains(name) || $0.type.contains(name)) && classFilter
             }
             return classFilter
         }
@@ -80,7 +80,7 @@ struct ListView: View {
                     .frame(maxWidth: .infinity)
                 }
             }
-            .searchable(text: $searchText)
+            .searchable(text: $searchText, prompt: "Search for Name or Type")
             .navigationTitle("CASE FILES")
             .toolbar{
                 ToolbarItem(placement: .navigationBarTrailing){
