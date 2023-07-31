@@ -9,36 +9,40 @@ import SwiftUI
 
 struct EntryView: View {
     var entry : UrbanEntry
+    
     var body: some View {
         ZStack {
             Color("background")
                 .edgesIgnoringSafeArea(.all)
             
-            VStack {
+            VStack (alignment: .leading){
                 MapView(coordinates: entry.sighting)
                     .frame(height: 290)
-                    .overlay{
-                        
-                    }
                 entry.image
                     .resizable()
-                    .frame(width: 190, height: 190)
+                    .frame(width: 200, height: 200)
                     .aspectRatio(contentMode: .fit)
                     .clipShape(
                         RoundedRectangle(cornerSize: CGSize(width: 50, height: 50)))
                     .overlay{
                         RoundedRectangle(cornerSize: CGSize(width: 50, height: 50))
-                            .stroke(style: StrokeStyle(lineWidth: 15))
+                            .stroke(style: StrokeStyle(lineWidth: 10))
                             .foregroundColor(Color("background"))
                     }
-                    .offset(y: -50)
-                    .padding(.bottom, -50)
+                    .offset(y: -100)
+                    .padding(.horizontal, 5)
+                    .padding(.bottom, -100)
                 
                 ScrollView{
                     VStack(alignment: .leading){
-                        Text("TYPE")
-                        Text("CLASSIFICATION")
-                        Text("")
+                        TextField(topic: "TYPE", content: entry.type, isInline: true)
+                            .padding(.vertical, 3)
+                        TextField(topic: "CLASS", content: entry.classification, isInline: true)
+                            .padding(.vertical, 3)
+                        TextField(topic: "LOCATION", content: entry.location, isInline: true)
+                            .padding(.vertical, 3)
+                        TextField(topic: "DESCRIPTION", content: entry.description, isInline: false)
+                            .padding(.vertical, 3)
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding()
@@ -50,8 +54,40 @@ struct EntryView: View {
     }
 }
 
+struct TextField : View{
+    let topic : String
+    let content : String
+    let isInline : Bool
+    
+    var body : some View {
+        if isInline{
+            HStack (alignment: .top){
+                Text(topic + ":")
+                    .font(.custom("Courier", size: 20))
+                    .bold()
+                    .underline()
+                
+                Text(content)
+                    .font(.custom("Courier", size: 20))
+            }
+        }else {
+            VStack(alignment: .leading){
+                Text(topic + ":")
+                    .font(.custom("Courier", size: 20))
+                    .bold()
+                    .underline()
+                
+                Text(content)
+                    .font(.custom("Courier", size: 16))
+                    .multilineTextAlignment(.leading)
+                    .padding(.horizontal)
+            }
+        }
+    }
+}
+
 struct EntryView_Previews: PreviewProvider {
     static var previews: some View {
-        EntryView(entry: urbanEntries[1])
+        EntryView(entry: urbanEntries[0])
     }
 }
