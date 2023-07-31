@@ -8,25 +8,9 @@
 import SwiftUI
 import MapKit
 
-//
-//struct MapView: View {
-//    var coordinates : [SightingCoords]
-//    @State private var region = MKCoordinateRegion()
-//
-//    var body: some View {
-//        Map(coordinateRegion: $region, annotationItems: coordinates){c in
-//            MapMarker(coordinate: c.coordinate, tint: Color("f_back"))
-//        }
-//        .onAppear{
-//            region = MKCoordinateRegion(center: coordinates[0].coordinate, span: MKCoordinateSpan(latitudeDelta: 10, longitudeDelta: 10))
-//        }
-//
-//    }
-//}
-
-
 struct MapView : UIViewRepresentable {
     let coordinates : [SightingCoords]
+    let zoomLevel : Double
     
     func makeCoordinator() -> Coordinator {
         Coordinator(self)
@@ -37,9 +21,6 @@ struct MapView : UIViewRepresentable {
         
         init(_ parent: MapView) {
             self.parent = parent
-        }
-        
-        func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, didChange newState: MKAnnotationView.DragState, fromOldState oldState: MKAnnotationView.DragState) {
         }
         
         func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
@@ -58,7 +39,7 @@ struct MapView : UIViewRepresentable {
         let mapView = MKMapView(frame: UIScreen.main.bounds)
         mapView.delegate = context.coordinator
         
-        let region = MKCoordinateRegion(center: coordinates[0].coordinate, span: MKCoordinateSpan(latitudeDelta: 10, longitudeDelta: 10))
+        let region = MKCoordinateRegion(center: coordinates[0].coordinate, span: MKCoordinateSpan(latitudeDelta: zoomLevel, longitudeDelta: zoomLevel))
         mapView.setRegion(region, animated: true)
         
         coordinates.forEach { coord in
@@ -79,6 +60,6 @@ struct MapView : UIViewRepresentable {
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView(coordinates: urbanEntries[0].sighting)
+        MapView(coordinates: urbanEntries[0].sighting, zoomLevel: 11)
     }
 }

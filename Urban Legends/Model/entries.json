@@ -5,12 +5,17 @@
         "classification": "Neutral",
         "location" : "North West America",
         "description":
-            "   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius orci sit amet elit elementum tempor. Proin ut condimentum tellus. Vivamus porttitor libero nec turpis pulvinar, ac congue quam venenatis. Nam ut pulvinar nibh, ut molestie magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus ultricies condimentum lorem, fermentum tempus odio blandit sed. Vestibulum eu neque vel odio fringilla imperdiet nec in massa. Praesent rhoncus quis ligula hendrerit dignissim. Phasellus sodales ac magna sit amet tempus. Phasellus consequat magna aliquam eros placerat, sit amet ullamcorper turpis pretium. Nam feugiat bibendum molestie. In pretium urna ligula, eget auctor ligula mollis sed.\n   Donec non porttitor ante. Donec facilisis felis eget fermentum tristique. Nunc at mattis arcu, non posuere velit. Etiam at semper lorem. Donec sodales pulvinar felis sit amet gravida. Maecenas sagittis nisi vitae lectus convallis pellentesque. Cras aliquet quam vitae porta fringilla. Quisque molestie risus sit amet aliquam placerat.\n   Donec vitae mi euismod lorem tincidunt finibus a nec massa. Sed varius rutrum felis in accumsan. Mauris condimentum lectus ac feugiat volutpat. Mauris blandit sapien nec velit malesuada, nec mollis ex placerat. Mauris est odio, iaculis nec blandit quis, scelerisque nec ligula. Fusce quis vulputate nisi. Sed vitae cursus magna. Donec finibus, ante dictum dignissim suscipit, mauris lacus rhoncus nulla, in vestibulum lectus sapien varius arcu. Ut vitae elit ut turpis consectetur vestibulum. Fusce ultrices ipsum in luctus auctor. Morbi vitae semper diam. Nunc posuere pellentesque sem sed rhoncus. Nullam tristique porta risus convallis ullamcorper. Proin sollicitudin nisi id bibendum tempus.",
-        "imageName": "big_foot",
+            "   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius orci sit amet elit elementum tempor. Proin ut condimentum tellus. Vivamus porttitor libero nec turpis pulvinar, ac congue quam venenatis. Nam ut pulvinar nibh, ut molestie magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus ultricies condimentum lorem, fermentum tempus odio blandit sed. Vestibulum eu neque vel odio fringilla imperdiet nec in massa. Praesent rhoncus quis ligula hendrerit dignissim. Phasellus sodales ac magna sit amet tempus. Phasellus consequat magna aliquam eros placerat, sit amet ullamcorper turpis pretium. Nam feugiat bibendum molestie. In pretium urna ligula, eget auctor ligula mollis sed",
+        "imageName": [
+            "big_foot",
+            "big_foot_2",
+            "big_foot_3"
+        ],
+        "mapZoom": 11,
         "coordinates": [
             {
                 "latitude": 41.3237618,
-                "longitude": -123.7062571,
+                "longitude": -123.0062571,
                 "area" : 100000
             },
             {
@@ -31,27 +36,68 @@
         ]
     },
     {
-        "name": "Lockness Monster",
-        "type": "Pre-historic",
-        "classification": "Safe",
-        "location" : "Lockness Lake, Scotland",
+        "name": "Chupacabra",
+        "type": "Beast",
+        "classification": "Neutral",
+        "location" : "Moca, Puerto Rico",
         "description": "Lorem Ipsum",
-        "imageName": "nessie",
+        "imageName": [
+            "chupacabra",
+            "chupacabra_2",
+            "chupacabra_3",
+            "chupacabra_4"
+        ],
+        "mapZoom": 1,
         "coordinates": [
             {
-                "latitude": 43.48700,
-                "longitude": 122.85168,
-                "area" : 100000
+                "latitude": 18.248212,
+                "longitude": -66.873499,
+                "area" : 9500
+            },
+            {
+                "latitude": 18.397223,
+                "longitude": -67.118655,
+                "area" : 10000
+            },
+            {
+                "latitude": 18.046150,
+                "longitude": -67.028369,
+                "area" : 8000
             }
         ]
     },
     {
-        "name": "Mothman",
-        "type": "Humanoid",
-        "classification": "Dangerous",
-        "location" : "America",
+        "name": "Loch Ness Monster",
+        "type": "Pre-historic",
+        "classification": "Safe",
+        "location" : "Loch Ness, Scotland",
         "description": "Lorem Ipsum",
-        "imageName": "mothman",
+        "imageName": [
+            "nessie",
+            "nessie_2"
+        ],
+        "mapZoom": 1,
+        "coordinates": [
+            {
+                "latitude": 57.280694,
+                "longitude": -4.479236,
+                "area" : 5000
+            },
+            {
+                "latitude": 57.375501,
+                "longitude": -4.362304,
+                "area" : 3000
+            }
+        ]
+    },
+    {
+        "name": "Kisaragi Station",
+        "type": "Place",
+        "classification": "Dangerous",
+        "location" : "Japan",
+        "description": "Lorem Ipsum",
+        "imageName": ["kisaragi"],
+        "mapZoom": 1,
         "coordinates": [
             {
                 "latitude": 43.48700,
@@ -66,7 +112,11 @@
         "classification": "Dangerous",
         "location" : "Mexico",
         "description": "Lorem Ipsum",
-        "imageName": "la_llorona",
+        "imageName": [
+            "la_llorona",
+            "la_llorona_2"
+        ],
+        "mapZoom": 1,
         "coordinates": [
             {
                 "latitude": 43.48700,
@@ -81,7 +131,12 @@
         "classification": "Dangerous",
         "location" : "America",
         "description": "Lorem Ipsum",
-        "imageName": "wendigo",
+        "imageName": [
+            "wendigo",
+            "wendigo_2",
+            "wendigo_3"
+        ],
+        "mapZoom": 1,
         "coordinates": [
             {
                 "latitude": 43.48700,
@@ -96,37 +151,11 @@
         "classification": "Dangerous",
         "location" : "Japan",
         "description": "Lorem Ipsum",
-        "imageName": "teketeke",
-        "coordinates": [
-            {
-                "latitude": 43.48700,
-                "longitude": 122.85168,
-                "area" : 100000
-            }
-        ]
-    },
-    {
-        "name": "Devil's Footprint",
-        "type": "Phenomenon",
-        "classification": "Safe",
-        "location" : "England",
-        "description": "Lorem Ipsum",
-        "imageName": "devil_prints",
-        "coordinates": [
-            {
-                "latitude": 43.48700,
-                "longitude": 122.85168,
-                "area" : 100000
-            }
-        ]
-    },
-    {
-        "name": "Chupacabra",
-        "type": "Beast",
-        "classification": "Neutral",
-        "location" : "Somewhere",
-        "description": "Lorem Ipsum",
-        "imageName": "chupacabra",
+        "imageName": [
+            "teketeke",
+            "teketeke_2"
+        ],
+        "mapZoom": 1,
         "coordinates": [
             {
                 "latitude": 43.48700,

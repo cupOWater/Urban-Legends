@@ -16,9 +16,10 @@ struct UrbanEntry : Identifiable, Codable{
     var location: String
     var classification : String
     var description : String
-    var imageName : String
-    var image : Image { Image(imageName) }
     
+    var imageName : [String]
+    
+    var mapZoom : Double
     var coordinates : [Coordinate]
     var sighting : [SightingCoords] {
         var temp = [SightingCoords]()

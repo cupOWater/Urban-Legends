@@ -16,25 +16,22 @@ struct EntryView: View {
                 .edgesIgnoringSafeArea(.all)
             
             VStack (alignment: .leading){
-                MapView(coordinates: entry.sighting)
-                    .frame(height: 290)
-                entry.image
-                    .resizable()
-                    .frame(width: 200, height: 200)
-                    .aspectRatio(contentMode: .fit)
-                    .clipShape(
-                        RoundedRectangle(cornerSize: CGSize(width: 50, height: 50)))
-                    .overlay{
-                        RoundedRectangle(cornerSize: CGSize(width: 50, height: 50))
-                            .stroke(style: StrokeStyle(lineWidth: 10))
-                            .foregroundColor(Color("background"))
-                    }
-                    .offset(y: -100)
-                    .padding(.horizontal, 5)
-                    .padding(.bottom, -100)
-                
+                MapView(coordinates: entry.sighting, zoomLevel: entry.mapZoom)
+                    .frame(height: 300)
                 ScrollView{
                     VStack(alignment: .leading){
+                        TabView{
+                            ForEach(entry.imageName, id: \.self){name in
+                                ZStack {
+                                    Rectangle()
+                                    Image(name)
+                                        .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                }
+                            }
+                        }
+                        .tabViewStyle(PageTabViewStyle())
+                        .frame(height: 300)
                         TextField(topic: "TYPE", content: entry.type, isInline: true)
                             .padding(.vertical, 3)
                         TextField(topic: "CLASS", content: entry.classification, isInline: true)
@@ -76,11 +73,12 @@ struct TextField : View{
                     .font(.custom("Courier", size: 20))
                     .bold()
                     .underline()
+                    .padding(.bottom)
                 
                 Text(content)
                     .font(.custom("Courier", size: 16))
                     .multilineTextAlignment(.leading)
-                    .padding(.horizontal)
+                    .padding(.horizontal, 5)
             }
         }
     }
@@ -88,6 +86,6 @@ struct TextField : View{
 
 struct EntryView_Previews: PreviewProvider {
     static var previews: some View {
-        EntryView(entry: urbanEntries[0])
+        EntryView(entry: urbanEntries[1])
     }
 }
