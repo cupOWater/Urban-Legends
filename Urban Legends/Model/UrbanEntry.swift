@@ -24,21 +24,22 @@ struct UrbanEntry : Identifiable, Codable{
         var temp = [SightingCoords]()
         coordinates.forEach{c in
             temp.append(
-                SightingCoords(coordinate: CLLocationCoordinate2D(latitude: c.latitude, longitude: c.longitude))
+                SightingCoords(area: c.area, coordinate: CLLocationCoordinate2D(latitude: c.latitude, longitude: c.longitude))
             )
         }
         return temp
     }
 }
 
-struct SightingCoords : Identifiable{
-    var id : UUID {UUID()}
+struct SightingCoords {
+    var area : Double
     var coordinate : CLLocationCoordinate2D
 }
 
 struct Coordinate : Codable{
     var latitude : Double
     var longitude : Double
+    var area : Double
 }
 
 

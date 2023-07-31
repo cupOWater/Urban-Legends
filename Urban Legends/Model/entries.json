@@ -10,19 +10,23 @@
         "coordinates": [
             {
                 "latitude": 41.3237618,
-                "longitude": -123.7062571
+                "longitude": -123.7062571,
+                "area" : 100000
             },
             {
                 "latitude": 43.2144411,
-                "longitude": -122.6050701
+                "longitude": -122.6050701,
+                "area" : 50000
             },
             {
-                "latitude": 37.3000318,
-                "longitude": -119.2320784
+                "latitude": 42,
+                "longitude": -119.2320784,
+                "area" : 90000
             },
             {
                 "latitude": 39.4864891,
-                "longitude": -122.8626840
+                "longitude": -122.8626840,
+                "area" : 80000
             }
         ]
     },
@@ -36,7 +40,8 @@
         "coordinates": [
             {
                 "latitude": 43.48700,
-                "longitude": 122.85168
+                "longitude": 122.85168,
+                "area" : 100000
             }
         ]
     },
@@ -50,7 +55,8 @@
         "coordinates": [
             {
                 "latitude": 43.48700,
-                "longitude": 122.85168
+                "longitude": 122.85168,
+                "area" : 100000
             }
         ]
     },
@@ -64,7 +70,8 @@
         "coordinates": [
             {
                 "latitude": 43.48700,
-                "longitude": 122.85168
+                "longitude": 122.85168,
+                "area" : 100000
             }
         ]
     },
@@ -78,7 +85,8 @@
         "coordinates": [
             {
                 "latitude": 43.48700,
-                "longitude": 122.85168
+                "longitude": 122.85168,
+                "area" : 100000
             }
         ]
     },
@@ -92,7 +100,8 @@
         "coordinates": [
             {
                 "latitude": 43.48700,
-                "longitude": 122.85168
+                "longitude": 122.85168,
+                "area" : 100000
             }
         ]
     },
@@ -106,7 +115,8 @@
         "coordinates": [
             {
                 "latitude": 43.48700,
-                "longitude": 122.85168
+                "longitude": 122.85168,
+                "area" : 100000
             }
         ]
     },
@@ -120,7 +130,8 @@
         "coordinates": [
             {
                 "latitude": 43.48700,
-                "longitude": 122.85168
+                "longitude": 122.85168,
+                "area" : 100000
             }
         ]
     }
