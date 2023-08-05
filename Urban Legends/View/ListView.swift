@@ -16,9 +16,9 @@ extension UINavigationController {
 }
 
 struct ListView: View {
-    @State private var darkMode : Bool = false
-    @State private var scheme: ColorScheme = .light
-    @State private var darkModeImg = "sun.max"
+    @State private var darkMode : Bool = true
+    @State private var scheme: ColorScheme = .dark
+    @State private var darkModeImg = "moon.fill"
     @State private var searchText = ""
     
     // 0: Safe, 1: Neutral, 2: Dangerous

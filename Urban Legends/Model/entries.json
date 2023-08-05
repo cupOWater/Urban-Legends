@@ -5,11 +5,22 @@
         "classification": "Neutral",
         "location" : "North West America",
         "description":
-            "   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius orci sit amet elit elementum tempor. Proin ut condimentum tellus. Vivamus porttitor libero nec turpis pulvinar, ac congue quam venenatis. Nam ut pulvinar nibh, ut molestie magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus ultricies condimentum lorem, fermentum tempus odio blandit sed. Vestibulum eu neque vel odio fringilla imperdiet nec in massa. Praesent rhoncus quis ligula hendrerit dignissim. Phasellus sodales ac magna sit amet tempus. Phasellus consequat magna aliquam eros placerat, sit amet ullamcorper turpis pretium. Nam feugiat bibendum molestie. In pretium urna ligula, eget auctor ligula mollis sed",
-        "imageName": [
-            "big_foot",
-            "big_foot_2",
-            "big_foot_3"
+        "   One of the most famous Cryptids worldwide, Bigfoot, AKA Sasquatch, is a large (1.8m - 2.7m), humanoid creature with ape-like features. One of its distinct characteristics was the large footprints for which it is named. Despite being documented relatively recently, paintings of a creature similar to Bigfoot were found in many indigenous cultures around North America. Some speculate that Bigfoot might even be a surviving specimen of the extinct genus Gigantopithecus blacki.",
+        "src": "Wikipedia contributors. (2023, July 29). Bigfoot. In Wikipedia, The Free Encyclopedia. Retrieved 04:04, August 5, 2023, from https://en.wikipedia.org/w/index.php?title=Bigfoot&oldid=1167732732",
+        "images": [
+            {
+                "name": "big_foot",
+                "src": "Patterson, R. (1967). Patterson–Gimlin film frame 352 [Image]. Wikipedia. https://en.wikipedia.org/wiki/File:Patterson–Gimlin_film_frame_352.jpg"
+            },
+            {
+                "name": "big_foot_2",
+                "src": "Carol, M. (2021). [Photograph of Forest, a Bigfoot figure]. Library of Congress. https://www.loc.gov/item/2021757947/"
+            },
+            {
+                "name": "big_foot_3",
+                "src": "LeCire. (2006). Pie Grande [Drawing]. Wikipedia. https://commons.wikimedia.org/wiki/File:Pie_Grande.jpg"
+            }
+
         ],
         "mapZoom": 11,
         "coordinates": [
@@ -40,12 +51,21 @@
         "type": "Beast",
         "classification": "Neutral",
         "location" : "Moca, Puerto Rico",
-        "description": "Lorem Ipsum",
-        "imageName": [
-            "chupacabra",
-            "chupacabra_2",
-            "chupacabra_3",
-            "chupacabra_4"
+        "description": "Chupacabra is a creature from Latin American folklore. The creature is known to kill and feed on livestock by drinking their blood, especially goats. This is the reason for its name, as Chupaccabras literally means 'goat-sucker' in Spanish. Interestingly, the legend is based on an event happened in 1975, where multiple livestocks were drained of blood around Moca, Puerto Rico.",
+        "src": "Wikipedia contributors. (2023, July 30). Chupacabra. In Wikipedia, The Free Encyclopedia. Retrieved 04:21, August 5, 2023, from https://en.wikipedia.org/w/index.php?title=Chupacabra&oldid=1167959118",
+        "images": [
+            {
+                "name": "chupacabra",
+                "src": "Carter, J. (2006). Chupacabra [Drawing]. Flickr. https://www.flickr.com/photos/cartercomics/141058618/in/photostream/"
+            },
+            {
+                "name": "chupacabra_2",
+                "src": "Encyclopædia Britannica. (n.d). Model of Chupacabra [Image]. Encyclopædia Britannica. https://www.britannica.com/topic/chupacabra#/media/1/2082613/246507"
+            },
+            {
+                "name": "chupacabra_3",
+                "src": "Diffee, M. (2013). The Chupacabra [Drawing]. Texas Monthly. https://www.texasmonthly.com/the-culture/the-chupacabra/"
+            }
         ],
         "mapZoom": 1,
         "coordinates": [
@@ -68,13 +88,20 @@
     },
     {
         "name": "Loch Ness Monster",
-        "type": "Pre-historic",
+        "type": "Beast",
         "classification": "Safe",
         "location" : "Loch Ness, Scotland",
-        "description": "Lorem Ipsum",
-        "imageName": [
-            "nessie",
-            "nessie_2"
+        "description": "Another iconic cryptids, Loch Ness Monster, or Nessie, is an aquatic creature resembling a pre-historic dinosaur with long neck. There were multiple sighting of the creature dating way back to the 6th century AD to as recent as 2021. The creature is brought into fame through multiple photos taken of the it, though many of which were debunked as fake.",
+        "src": "Wikipedia contributors. (2023, July 23). Loch Ness Monster. In Wikipedia, The Free Encyclopedia. Retrieved 04:22, August 5, 2023, from https://en.wikipedia.org/w/index.php?title=Loch_Ness_Monster&oldid=1166758572",
+        "images": [
+            {
+                "name": "nessie",
+                "src": "[Hoaxed photo of Nessie]. (1934). Wikipedia. https://en.wikipedia.org/wiki/File:Hoaxed_photo_of_the_Loch_Ness_monster.jpg"
+            },
+            {
+                "name": "nessie_2",
+                "src": "Nuwer, R. (2012). [Artist's depiction of Plesiosaur]. Smithsonian. https://www.smithsonianmag.com/smart-news/celebrating-1447-years-of-the-loch-ness-monster-30711823/"
+            }
         ],
         "mapZoom": 1,
         "coordinates": [
@@ -94,34 +121,57 @@
         "name": "Kisaragi Station",
         "type": "Place",
         "classification": "Dangerous",
-        "location" : "Japan",
-        "description": "Lorem Ipsum",
-        "imageName": ["kisaragi"],
-        "mapZoom": 1,
+        "location" : "Enshu Railway, Shizuoka, Japan",
+        "description": "This urban legends is very recent compared to many other, as it originates from a series of posts made on 2chan in 2004, a discussion forum in Japan. It is about a user called Hasami and her experience through the eerie trip at a Shizuoka railway. The trip ended when she stopped at Kisuragi Station, at which no one was around. After failing to get help, the fate of Hasami was left unknown as her phone's battery died out.",
+        "src": "Wikipedia contributors. (2023, April 26). Kisaragi Station. In Wikipedia, The Free Encyclopedia. Retrieved 04:23, August 5, 2023, from https://en.wikipedia.org/w/index.php?title=Kisaragi_Station&oldid=1151790954",
+        "images": [
+            {
+                "name": "kisaragi",
+                "src": "Rifqikimen. (n.d.). Kisaragi Station [Image]. Urban Legendpedia. https://urban-legendpedia.fandom.com/wiki/Kisaragi_Station"
+            }
+        ],
+        "mapZoom": 0.2,
         "coordinates": [
             {
-                "latitude": 43.48700,
-                "longitude": 122.85168,
-                "area" : 100000
+                "latitude": 34.843332,
+                "longitude": 137.798472,
+                "area" : 2000
             }
         ]
     },
     {
         "name": "La Llorona",
         "type": "Ghost",
-        "classification": "Dangerous",
-        "location" : "Mexico",
-        "description": "Lorem Ipsum",
-        "imageName": [
-            "la_llorona",
-            "la_llorona_2"
+        "classification": "Safe",
+        "location" : "Central and South America",
+        "description": "A very famous legend within the Hispanic folklore, La Llorona, or The Crying Woman is a vengeful spirit known to have drowned her two children in a a blind rage after discovering that her husban was unfaithful. This legend is wide-reaching, with each region having a slightly different take. One of which is told to young children to scare them away from wandering carelessly around bodies of water. Additionally, the story is very popular in pop cultures, being adapted into books, movies, and musics",
+        "src": "Wikipedia contributors. (2023, August 3). La Llorona. In Wikipedia, The Free Encyclopedia. Retrieved 04:24, August 5, 2023, from https://en.wikipedia.org/w/index.php?title=La_Llorona&oldid=1168590995",
+        "images": [
+            {
+                "name": "la_llorona",
+                "src": "KatyaMSL. (2015). [Picture of a wood sculpture of La Llorona]. Wikipedia. https://commons.wikimedia.org/wiki/File:%22La_llorona%22_de_mandera.JPG"
+            },
+            {
+                "name": "la_llorona_2",
+                "src": "Warner Bros. (2022). [Marisol Ramirez as La Llorona]. Vanity Fair. https://www.vanityfair.com/hollywood/2019/04/la-llorona-real-mexican-legend-curse-of-la-llorona-movie"
+            }
         ],
-        "mapZoom": 1,
+        "mapZoom": 50,
         "coordinates": [
             {
-                "latitude": 43.48700,
-                "longitude": 122.85168,
-                "area" : 100000
+                "latitude": 12.701819,
+                "longitude": -86.005052,
+                "area" : 0
+            },
+            {
+                "latitude": 6.240974,
+                "longitude": -67.212392,
+                "area" : 500000
+            },
+            {
+                "latitude": 19.229455,
+                "longitude": -98.911208,
+                "area" : 350000
             }
         ]
     },
@@ -129,19 +179,40 @@
         "name": "Wendigo",
         "type": "Humanoid",
         "classification": "Dangerous",
-        "location" : "America",
-        "description": "Lorem Ipsum",
-        "imageName": [
-            "wendigo",
-            "wendigo_2",
-            "wendigo_3"
+        "location" : "The Great Plains, North America",
+        "description": "A native American mythical legend, Wendigo is a cursed being closely related to cannibalism. The creature is humanoid, extremely thin and ghoulish, many depictions also incude a cervine-like skull for a head. It is said that whoever is blinded by greed or partake in cannibalism will be haunted by the spirit of the Wendigo, and will soon turn into the demonic creature themselves. The concept of Wendigo is used in many popular media, such as in 'Pet Sematary' by Steven King, or as the main villains of the game 'Until Dawn'.",
+        "src": "Wikipedia contributors. (2023, June 18). Wendigo. In Wikipedia, The Free Encyclopedia. Retrieved 04:25, August 5, 2023, from https://en.wikipedia.org/w/index.php?title=Wendigo&oldid=1160795655",
+        "images": [
+            {
+                "name": "wendigo",
+                "src": "KingOvRats. (2017). Wendigo [Drawing]. DevianArt. https://www.deviantart.com/kingovrats/art/Wendigo-670148978"
+            },
+            {
+                "name": "wendigo_2",
+                "src": "Moor, T. (n.d). the wendigo [Drawing]. Thomas Moor Illustration. https://thomasmoor.at/projects/L24Wvk?album_id=1208604"
+            }
         ],
-        "mapZoom": 1,
+        "mapZoom": 30,
         "coordinates": [
             {
-                "latitude": 43.48700,
-                "longitude": 122.85168,
-                "area" : 100000
+                "latitude": 49.308015,
+                "longitude": -98.507878,
+                "area" : 0
+            },
+            {
+                "latitude": 45.908701,
+                "longitude": -99.026288,
+                "area" : 250000
+            },
+            {
+                "latitude": 51.080532,
+                "longitude": -106.503946,
+                "area" : 200000
+            },
+            {
+                "latitude": 45.850210,
+                "longitude": -87.683774,
+                "area" : 150000
             }
         ]
     },
@@ -149,18 +220,30 @@
         "name": "Teke Teke",
         "type": "Ghost",
         "classification": "Dangerous",
-        "location" : "Japan",
-        "description": "Lorem Ipsum",
-        "imageName": [
-            "teketeke",
-            "teketeke_2"
+        "location" : "Muroran, Hokkaido, Japan",
+        "description": "A vengeful spirit originated from Japan, known to roam the around in dark, empty streets at night. The spirit was speculated to be the spirit of a young woman named Kashima Reiko, who after a traumatic event, took her own life by jumping down a train track, the impact of which torned her body in half. This is also the apperance of the spirit, an upper torso of a woman. The name 'teke teke' comes from the sound of her nails scraping along the asphalt road as she approaches you.",
+        "src": "Yokai.com. (n.d). Teke Teke, Yokai.com. Retrieved August 5, 2023, from https://yokai.com/teketeke/",
+        "images": [
+            {
+                "name": "teketeke",
+                "src": "Lantis. (2018). [Artist representation of Teke Teke]. Wikipedia. https://commons.wikimedia.org/wiki/File:Teketeke.png"
+            },
+            {
+                "name": "teketeke_2",
+                "src": "Meyer, M. (2015). [A Drawing of Teke Teke]. matthewmeyer.net. https://matthewmeyer.net/blog/2015/10/31/a-yokai-a-day-teke-teke/"
+            }
         ],
-        "mapZoom": 1,
+        "mapZoom": 0.2,
         "coordinates": [
             {
-                "latitude": 43.48700,
-                "longitude": 122.85168,
-                "area" : 100000
+                "latitude": 42.383458,
+                "longitude": 140.992086,
+                "area" : 2000
+            },
+            {
+                "latitude": 42.356428,
+                "longitude": 141.025111,
+                "area" : 950
             }
         ]
     }

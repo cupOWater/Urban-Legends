@@ -27,7 +27,7 @@ struct MapView : UIViewRepresentable {
             if overlay is MKCircle {
                 let boundCircle = MKCircleRenderer(overlay: overlay)
                 boundCircle.fillColor = .red
-                boundCircle.alpha = 0.2
+                boundCircle.alpha = 0.3
                 return boundCircle
             }
             return MKOverlayRenderer(overlay: overlay)

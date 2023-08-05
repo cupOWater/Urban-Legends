@@ -46,7 +46,7 @@ struct EntryRow: View {
                     .stroke(style: StrokeStyle(lineWidth: 2))
                     .foregroundColor(Color("f_back"))
                 HStack{
-                    Image(entry.imageName[0])
+                    Image(entry.images[0].name)
                         .resizable()
                         .frame(width: 70, height: 70)
                         .scaledToFill()

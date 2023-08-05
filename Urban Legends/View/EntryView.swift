@@ -17,16 +17,27 @@ struct EntryView: View {
             
             VStack (alignment: .leading){
                 MapView(coordinates: entry.sighting, zoomLevel: entry.mapZoom)
-                    .frame(height: 300)
+                    .frame(height: 280)
                 ScrollView{
                     VStack(alignment: .leading){
                         TabView{
-                            ForEach(entry.imageName, id: \.self){name in
+                            ForEach(entry.images, id: \.self){image in
                                 ZStack {
                                     Rectangle()
-                                    Image(name)
-                                        .resizable()
-                                    .aspectRatio(contentMode: .fit)
+                                        .foregroundColor(.black)
+                                    
+                                    VStack {
+                                        Image(image.name)
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fit)
+                                            .frame(height: 230)
+                                        
+                                        Text(image.src)
+                                            .font(.caption2)
+                                            .foregroundColor(.white)
+                                            .padding(.horizontal)
+                                        Spacer()
+                                    }
                                 }
                             }
                         }
@@ -40,12 +51,18 @@ struct EntryView: View {
                             .padding(.vertical, 3)
                         TextField(topic: "DESCRIPTION", content: entry.description, isInline: false)
                             .padding(.vertical, 3)
+                        Spacer()
+                        Text(entry.src)
+                            .font(.caption)
+                            .italic()
+                            .padding(.all, 10)
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding()
                 }
             }
         }
+        .edgesIgnoringSafeArea(.all)
         .navigationTitle(entry.name)
         .navigationBarTitleDisplayMode(.inline)
     }
@@ -73,7 +90,7 @@ struct TextField : View{
                     .font(.custom("Courier", size: 20))
                     .bold()
                     .underline()
-                    .padding(.bottom)
+                    .padding(.bottom, 3)
                 
                 Text(content)
                     .font(.custom("Courier", size: 16))
@@ -86,6 +103,6 @@ struct TextField : View{
 
 struct EntryView_Previews: PreviewProvider {
     static var previews: some View {
-        EntryView(entry: urbanEntries[1])
+        EntryView(entry: urbanEntries[5])
     }
 }

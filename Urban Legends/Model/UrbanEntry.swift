@@ -16,8 +16,9 @@ struct UrbanEntry : Identifiable, Codable{
     var location: String
     var classification : String
     var description : String
+    var src : String
     
-    var imageName : [String]
+    var images : [ImageWSource]
     
     var mapZoom : Double
     var coordinates : [Coordinate]
@@ -35,6 +36,12 @@ struct UrbanEntry : Identifiable, Codable{
 struct SightingCoords {
     var area : Double
     var coordinate : CLLocationCoordinate2D
+}
+
+struct ImageWSource : Codable, Hashable{
+    var id : UUID {UUID()}
+    var name : String
+    var src : String
 }
 
 struct Coordinate : Codable{
