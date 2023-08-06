@@ -7,12 +7,14 @@
 
 import SwiftUI
 
+// THIS IS FOR REMOVING THE 'BACK' TEXT IN NAVIGATION VIEW BACK BUTTON
+// FOR SOME REASON IT DOESN'T WORK WHEN I PUT THIS IN THE init() IN THE VIEW
+// iOS Lifee. (2022). Remove text from Back button keeping the icon. Retrieved from StackOverflow:    https://stackoverflow.com/questions/33025239/remove-text-from-back-button-keeping-the-icon
 extension UINavigationController {
     open override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         navigationBar.topItem?.backButtonDisplayMode = .minimal
     }
-    
 }
 
 struct ListView: View {

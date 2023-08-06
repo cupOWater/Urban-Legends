@@ -95,6 +95,7 @@ struct TextField : View{
                 Text(content)
                     .font(.custom("Courier", size: 16))
                     .multilineTextAlignment(.leading)
+                    .fixedSize(horizontal: false, vertical: true)
                     .padding(.horizontal, 5)
             }
         }
@@ -103,6 +104,6 @@ struct TextField : View{
 
 struct EntryView_Previews: PreviewProvider {
     static var previews: some View {
-        EntryView(entry: urbanEntries[5])
+        EntryView(entry: urbanEntries[0])
     }
 }
